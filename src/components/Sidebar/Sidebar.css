@@ -1,0 +1,76 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.logo{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    gap: 2px;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo2 {
+   font-size: 8px;
+   justify-content: center;
+}
+#bemVindo{
+    display: flex;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* menu */
+
+.menu{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menuItem{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 0.3rem;
+}
+.icon img {
+  width: 20px;      /* Ajuste o valor conforme o tamanho desejado */
+  height: auto;      /* Mantém a proporção original da imagem */
+  display: block;    /* Remove espaçamentos indesejados */
+  margin: 0 auto;    /* Centraliza horizontalmente (se quiser) */
+}
+
+.menuItem:hover{
+    cursor: pointer;
+}
+
+.active{
+    background: var(--activeItem);
+    margin-left: 0;
+}
+
+.active::before{
+    content: '';
+    width: 8px;
+    height: 100%;
+    background-color: var(--pink);
+}
+.sair img:last-child{
+padding-top: 11.5rem;
+  width: 20px;      
+  height: auto;      
+  display: block;   
+  margin: 0 auto;   
+  cursor: pointer;
+}
