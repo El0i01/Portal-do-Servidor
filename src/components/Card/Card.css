@@ -1,0 +1,18 @@
+.CompactCard{
+    display: flex;
+    flex: 1;
+    height: 7rem!important;
+    border-radius: 0.7rem;
+    color: rgb(1, 20, 2);
+    position: relative;
+    cursor: pointer;
+}
+
+.CompactCard:hover{
+    box-shadow: none;
+}
+
+.value{
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+}
