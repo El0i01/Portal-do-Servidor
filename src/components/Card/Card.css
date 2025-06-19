@@ -1,18 +1,51 @@
 .CompactCard{
+    /* estrutura principal */
     display: flex;
+    flex-direction: column;   /* empilha título, valor e barValue na vertical */
+    justify-content: center;  /* centraliza verticalmente dentro do card */
+    align-items: center;      /* centraliza horizontalmente */
+    height: 7rem !important;   /* ↓ era 7rem — cartão mais baixo */
+    margin: 0.5rem;   
     flex: 1;
-    height: 7rem!important;
     border-radius: 0.7rem;
     color: rgb(1, 20, 2);
     position: relative;
     cursor: pointer;
+    transition: transform 0.25s ease-in-out; /* suaviza a animação */
+    transform-origin: center;                /* faz o zoom a partir do centro */
 }
 
+/* sombra continua desativada no hover */
 .CompactCard:hover{
     box-shadow: none;
+    transform: scale(1.07);
 }
 
+/* título (span dentro de .radialBar) */
+.radialBar span{
+    display: block;
+    text-align: center;
+}
+
+/* bloco que contém valor e barValue */
+.detail{
+    display: flex;
+    flex-direction: column;   /* valor em cima, barValue embaixo */
+    align-items: center;      /* centraliza horizontalmente */
+}
+
+/* valor grande no meio */
 .value{
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 36px;
+    margin: .25rem 0;         /* espacinho opcional */
+}
+.title{
+ font-size: 1rem;
+}
+.value{
+ font-size: 2.5rem;
+}
+.barValue{
+ font-size: 0.75rem;
 }

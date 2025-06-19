@@ -1,5 +1,22 @@
-.MainDash{
+.nameServidor{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
+
+.nome{
+    padding-top: 2rem;        /* distância do topo do card ou do bloco */
+    margin-bottom: 0.25rem;   /* espaço entre nome e função            */
+    font-size: 1.5rem;        /* maior destaque para o nome            */
+    font-weight: 600;         /* negrito opcional                      */
+}
+
+.func{
+    font-size: 0.95rem;       /* levemente menor                       */
+    font-weight: 400;         /* mais leve que o nome                  */
+    color: #444;              /* cinza suave (opcional)                */
+}
+.card{
+    padding-top: 1rem;
+}
+

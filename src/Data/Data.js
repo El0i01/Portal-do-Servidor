@@ -41,7 +41,7 @@ export const CardsData =[
         boxShadow: "0px 10px 20px 0pxrgb(115, 179, 136)"
     },
     barValue: "Faltam 90 dias para as próximas férias!",
-    value: "2",
+    value: "8",
     series: [
       {
         name: "Férias vencidas",
@@ -56,7 +56,7 @@ export const CardsData =[
         clickGround: "rgba(12, 110, 88, 0.73)",
         boxShadow: "0px 10px 20px 0pxrgb(115, 179, 136)"
     },
-    barValue: "Faltam 367 dias para as próxima  Licença Prêmio!",
+    barValue: "367 dias para as próxima sLicença Prêmio!",
     value: "5",
     series: [
       {
@@ -81,4 +81,13 @@ export const CardsData =[
       },
     ],
   },
+];
+
+
+export const nameServ = [
+  {
+    name: "Rodrigo Eloi",
+    func: "Desenvolvedor full-stack"
+  },
+
 ]
